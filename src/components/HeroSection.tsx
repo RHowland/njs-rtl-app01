@@ -24,23 +24,17 @@ const HeroSection = () => {
           </p>
           <div className="flex justify-center md:justify-start">
             <button
-              className={`inline-flex text-${
-                isPrimary ? "white" : "gray-700"
-              } bg-${
-                isPrimary ? "[#0000E7]" : "gray-100"
-              } border-0 py-2 px-6 focus:outline-none rounded text-lg`}
+              className={`inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg ${
+                isPrimary ? "text-white bg-blue-700" : "text-gray-700 bg-gray-100 hover:bg-gray-200"
+              }`}
               onClick={toggleButtonStyles}
             >
               Learn more
             </button>
             <button
-              className={`ml-4 inline-flex text-${
-                isPrimary ? "gray-700" : "white"
-              } bg-${
-                isPrimary ? "gray-100" : "[#0000E7]"
-              } border-0 py-2 px-6 focus:outline-disable hover:bg-${
-                isPrimary ? "gray-200" : "[#0000E7]"
-              } rounded text-lg`}
+              className={`ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg ${
+                !isPrimary ? "text-white bg-blue-700 hover:bg-blue-800" : "text-gray-700 bg-gray-100 hover:bg-gray-200"
+              }`}
               onClick={toggleButtonStyles}
             >
               Signup
@@ -62,36 +56,35 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
 /**
-* =====================================================================
-*   ORIGINAL DOCUMENTATION 
-* =====================================================================
-* File Name      : HeroSection.tsx
-* Component Name : HeroSection
-* Component Type : Functional Component
-* Date Created   : 9-6-2024
-* Dev Name       : Hijab Zulfiqar
-* ------------------------------
-* Question: Why was it necessary to create this component?
-* Answer  : To provide an engaging and interactive introduction to our services on the main page.
-*
-* ------------------------------
-* Question: What does this component do?: 
-* Answer  : It displays a hero section with dynamic buttons for learning more or signing up, and a compelling visual.
-* 
-* ------------------------------
-* Section Comments: none
-* 
-* ------------------------------
-* Input Comments: none
-* 
-* ------------------------------
-* Output Comments: none
-* 
-* ------------------------------
-* Additional Comments:
-* Question: Did you have to write any unusual code? 
-* Answer  : No, standard React and Tailwind CSS practices were utilized.
-*
-*/
+ * =====================================================================
+ *   ORIGINAL DOCUMENTATION
+ * =====================================================================
+ * File Name      : HeroSection.tsx
+ * Component Name : HeroSection
+ * Component Type : Functional Component
+ * Date Created   : 9-6-2024
+ * Dev Name       : Hijab Zulfiqar
+ * ------------------------------
+ * Question: Why was it necessary to create this component?
+ * Answer  : To provide an engaging and interactive introduction to our services on the main page.
+ *
+ * ------------------------------
+ * Question: What does this component do?:
+ * Answer  : It displays a hero section with dynamic buttons for learning more or signing up, and a compelling visual.
+ *
+ * ------------------------------
+ * Section Comments: none
+ *
+ * ------------------------------
+ * Input Comments: none
+ *
+ * ------------------------------
+ * Output Comments: none
+ *
+ * ------------------------------
+ * Additional Comments:
+ * Question: Did you have to write any unusual code?
+ * Answer  : No, standard React and Tailwind CSS practices were utilized.
+ *
+ */

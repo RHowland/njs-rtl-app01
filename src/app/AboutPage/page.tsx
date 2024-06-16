@@ -6,11 +6,11 @@ import Navbar from "@/components/Navbar";
 const AboutPage = () => {
   return (
     <main>  {/* Footnote 2 */}
-      <Navbar />
+    
       <div className="flex flex-col justify-center items-center h-screen text-gray-800 text-2xl font-sans">
         <h1 className="font-bold">About Us Page</h1>
       </div>
-      <Footer/>  {/* Footnote 3 */}
+ 
       </main>
   );
 };
